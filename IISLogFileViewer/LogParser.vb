@@ -16,7 +16,7 @@ Public Class LogParser
             End While
 
             While line IsNot Nothing
-                ' Skip lines that start with "#" (header lines)
+                ' Skip lines that start with "#" - header lines
                 If Not line.StartsWith("#") Then
 
                     Dim entry As LogEntry = LogEntry.CreateFromLogLine(line)
